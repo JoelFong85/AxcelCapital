@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxcelCapital: Loan Financing@*@ViewBag.Title - My ASP.NET Application*@</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="@Url.Action("Index","Home")"><img src="~/Images/logo.png" width="150px" alt="AxcelCapital" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index","Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("About","Home")">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarFinancialSvcs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Financial Services</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarFinancialSvcs">
+                        <a class="dropdown-item" href="@Url.Action("LoansWithAxcelCapital","FinancialServices")">Loans with AxcelCapital</a>
+                        <a class="dropdown-item" href="@Url.Action("LoansAndFinancialConsultancy","FinancialServices")">Loans & Financial Consultancy</a>
+                        <a class="dropdown-item" href="@Url.Action("InvoiceFinancing","FinancialServices")">Invoice Financing</a>
+                        <a class="dropdown-item" href="@Url.Action("BusinessFinancing","FinancialServices")">Business Financing</a>
+                        <a class="dropdown-item" href="@Url.Action("PIC","FinancialServices")">Productivity & Innovation Credit</a>
+                        <a class="dropdown-item" href="@Url.Action("GovtAssistedSchemes","FinancialServices")">Government Assisted Schemes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item dropdown-toggle" id="navbarDropdownPropertyFin" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Property Financing
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownPropertyFin">
+                                <ul>
+                                    <a class="dropdown-item" href="#">Test</a>
+                                </ul>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="@Url.Action("PersonalLoanSolutions","FinancialServices")">Personal Loan Solutions</a>
+                        <a class="dropdown-item" href="@Url.Action("CustomSolutions","FinancialServices")">Custom Solutions</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Faq","Home")">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Careers","Home")">Careers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container body-content"></div>
+    <div>
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p>Copyright &copy; @DateTime.Now.Year Axcel Capital Pte Ltd. All Rights Reserved</p>
+                    </div>
+                    <div>
+                        <p><a id="termsOfService" href="#" data-toggle="modal" data-target="#terms-modal">Terms Of Service & Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <div class="modal fade bs-example-modal-lg" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+
+                <div class="modal-content row">
+                    <div class="modal-body clearfix">
+                        <div class="modal-header">
+                            <div class="container">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div class="container">
+                                    <div class="modal-title">
+                                        <h1>Terms of Service</h1>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Please read the following Terms of Service and the Privacy Policy carefully before registering your account.</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <ol>
+                                            <li>By accessing, browsing or using this website, and the websites of the related linked or listed companies, divisions or service groups, or any page thereof, through any direct or indirect means (individually or collectively, "Websites" or "Website"), or by using the goods, facilities or services offered in or through the Websites through alternative methods (including, for example, telephone, mail, email or facsimile), you accept and agree to be bound by these Terms of Service (the terms "Website" and "Websites" include use through these alternative methods).</li>
+                                            <li>By agreeing to the Terms of Service and the Privacy Policy, you have entered a legally binding document with IOLO PTE. LTD. and our legal successors. Whenever “We”, “Us” or “Our” are used in the Terms of Service and Privacy Policy, they refer to IOLO PTE. LTD.</li>
+                                            <li>If you disagree with the Terms of Service and Privacy Policy, please do not indicate your acceptance and do not use the services provided directly or indirectly by IOLO PTE. LTD.</li>
+                                            <li>IOLO PTE. LTD. operates the “Websites” or “Websites” and shall have the right to change or remove any feature or aspect of the services that we provide. IOLO has also the right to modify the terms and conditions applicable to users of the “Website” or “Websites”, including these Terms of Service, or any part hereof. Such changes, modification, additions or deletions shall be effective immediately upon posting on the “Website” or “Websites”. Any use by you of the “Website” or “Website” or the goods, facilities or services offered directly or indirectly shall be deemed to constitute acceptance of such changes.</li>
+                                            <li>You may terminate your account and stop using our services at any time if you disagree with any current or updated Terms of Service and our Privacy Policy. IOLO PTE. LTD. reserves the right to terminate any account that violates any our Terms of Service and Privacy Policy in part or thereof.</li>
+                                            <li>Both the Terms of Service and Privacy Policy will be used in event of dispute resolution and governed within the laws of Singapore.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Your IOLO Account</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>You must setup an account with IOLO in order to use the account management services provided. You agree to provide IOLO with accurate and complete information during account creation. You also agree to update your IOLO account information promptly should there be changes. Your IOLO account is free of charge. You may upgrade your account to a paid account if you need more data space than available, or when you wish to enable more functions to your IOLO account.</p>
+                                        <p>During account creation, you are required to choose a username and password. You will use this username and password to access the IOLO services and any data associated with your IOLO account.</p>
+                                        <p>Security is vital to us. You are solely responsible for protecting the privacy and security of your username and password. You are not to give your username and password to any third party. You are responsible for any activity on your IOLO account, whether that activity is authorized or not. If you lose your username or password, you will not be able to access your IOLO account. You may request for reset password if you have forgotten your password.</p>
+                                        <p>If IOLO detects an unauthorized breach of your IOLO account’s security, IOLO reserves the right to suspend your IOLO account and require you to recreate a new username and password. IOLO is not liable for any loss or damage arising from any access to, or sharing and use of your IOLO account. You agree that you will immediately notify IOLO at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7110151c181f31181e1d1e5f0216">[email&#160;protected]</a> if your account is accessed or used without your authorization, or if you believe that your IOLO account’s security has been compromised.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>IOLO Services</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>Your IOLO account and the services that accompany your account are free of charge unless otherwise stated. Your IOLO account assists in storing, managing and tracking all your insurance policies. Should there be enhancements made on the features to your IOLO account, you will be notified either by the information stated in the “Website” or “Websites”, or email.</p>
+                                        <p>Services such as update submission assistance and claims submission assistance are chargeable on ad-hoc request basis. You need not have an IOLO account to use such services however it is best recommended. The service fees are stated upfront and must be collected together with your agreement on our service agreement before any actions from us. As part of the service agreement, you consent to our collection and use of your personal data for the service required according to Personal Data Protection Act 2012. Other required information related to your service request will be made known and collected from you by email or whatsapp service. In the unlikely event of parcel loss in transition, we may request for information again. Service fee is not refundable nor exchangeable once paid. All services will end the earlier of; 3 months from service start date or when forms are submitted, or otherwise explicitly stated by IOLO PTE. PTD. We do not provide this service for payment/collection of premiums or assist in transfer of funds in any form. On a case by case basis, we reserve the right to decline any requests that we are unable to assist, for example, time sensitive cases. We will refund the service fees for declined cases.</p>
+                                        <p>IOLO PTE. LTD will not be held liable nor responsible for losses, partially or wholly, directly or indirectly from the following.</p>
+                                        <ul>
+                                            <li>Decisions by the insurance companies relating to client’s request</li>
+                                            <li>Failure to provide required information by client</li>
+                                            <li>False, inaccurate, incomplete information by client</li>
+                                            <li>Delays resulting from client’s inaction</li>
+                                            <li>Declined requests</li>
+                                        </ul>
+                                        <p>Your IOLO account may have certain presentation methodology in presenting information to you such as the dashboard page. We do not hold any responsibility or accountability if you misinterpret the information resulting in any subsequent losses in part or in full. You are to discontinue IOLO services if you do not agree with the presentation methodology or related services that IOLO PTE. LTD. provides.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Related or Linked Companies</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>In using your IOLO account, you may see information about products and services from related or linked companies such as insurance service providers. We may also provide the link to their websites for your added convenience. IOLO PTE. LTD. do not own nor control the related or linked companies as well as their websites, hence we do not assume responsibility nor liability in any of your activity or dealings with related or linked companies. IOLO PTE. LTD. will not be responsible for any loss or damage, from onset or consequential, arising from your dealings with related or linked companies. IOLO PTE. LTD. will not be accountable for the accuracy and consistency of the information provided by related and linked companies, you are to read these companies’ Terms of Service and Privacy Policy on their respective websites. You are to note that dealing with related or linked companies are at your own risk.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Information on products and services from related or linked companies</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>IOLO PTE. LTD is not a financial service provider nor intermediary, the information about products and services from related or linked companies such as insurance companies do not in part or in whole constitute as selling, recommending, advising, endorsing, approving, suggesting, implying or agreeing on the quality of the product or service. The comparison information does not constitute in part or as whole as any kind of offer or solicitation for the product or service of the related or linked companies or any 3rd party.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Account Closure / Termination</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>You may close your free IOLO account anytime. You are to inform us of your decision to termination at the soonest possible. IOLO PTE LTD reserves the right to terminate any account without prior notice if the account holder is found to violate the Terms of Service and Privacy Policy.</p>
+                                        <p>Once an account is closed, IOLO will delete all data previously associated with the closed account.</p>
+                                        <p>Should any account holder become deceased, if the family members of the account holder are to provide legitimate proof such as marriage certificates and birth certificates, we will release the account information. You agree to consent to the above stated statement.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Privacy Policy</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>Please read the following terms regarding Privacy Policy carefully. The following terms explains how IOLO manages yours personal data with adherence to Personal Data Protection Act. If you disagree with any of the following terms, do not use any services provided directly or indirectly from IOLO. If you have further questions, please contact us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f5e5b5256517f56505350114c5811">[email&#160;protected]</a> By registering your account and/or using our services, you have consented that you agree to following terms stated in this Privacy Policy and the Terms of Service. Both the Terms of Service and Privacy Policy will be used in event of dispute resolution and governed within the laws of Singapore.</p>
+                                        <p>In the event of changes or updates to the Privacy Policy, we will notify account holders in our website or by email. If you continue to use our services, that will constitute as a consent to the updated Privacy Policy.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Personal Data which we will collect and store</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>We respect your privacy and that includes your personal data. In order for us to maintain your IOLO account and/or its accompanying services, we will need to collect and store necessary personal data such as name, NRIC, contact number(s), email, mailing and/or residential address, motor vehicle details, insurance policies and medical reports etc. The list of data stated in the previous statement is not exhaustive and is stated when you create your IOLO account. Your IOLO account also allows you to store data which you deem fit as a part of your IOLO account database.</p>
+                                        <p>We put in place reasonable security measures to prevent your Personal Data, as well as other data which you inputted, from unauthorised use, copy and collection. We used 128-bit SSL (Secure Socket Layer) encryption technology on our platform which is the industry standard.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Personal Data Protection Act</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>By requesting any of our services, you agree that IOLO PTE. LTD. may collect, use and disclose your personal data, as provided in this agreement, or (if applicable) obtained by our organization as a result of your request, for the following purposes in accordance with the Personal Data Protection Act 2012 and our privacy policy (available at www.iolo.sg):</p>
+                                        <ul>
+                                            <li>the processing of your request/requests;</li>
+                                            <li>for the purpose of form filling and providing the required information in accordance to the requirement of respective insurance company</li>
+                                            <li>the administration of your account with our organization.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>No sharing of your personal data without consent</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>We respect your personal data and will not share your personal data with any 3rd party, such as related or linked companies without your consent. In cases where you locate a 3rd party product or service which you wish to pursue, we will ask for your consent to provide personal data to this 3rd party provider to the necessary extend in order to facilitate your transaction. We will ensure that 3rd party providers protect your personal data similar to our privacy policy.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Other cases where your personal data may be shared</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <ul>
+                                            <li>As required by insurance company for the purpose of the service provided by IOLO Pte Ltd</li>
+                                            <li>Account holder becomes deceased. IOLO account information may be shared to next of kin</li>
+                                            <li>To assist in Police Investigation</li>
+                                            <li>Court Order</li>
+                                            <li>IOLO business structure changes such as merger and acquisitions or sale</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>How your personal data is used</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>Your IOLO account collects and stores your personal data and other data that you input to formulate your entire Insurance database. Your personal data will be used for the purpose of the forms based on the services you have assigned us to assist. You may receive notifications from the data that you inputted to remind yourself on important dates such as maturity dates or expiry dates. These notifications serve as servicing tools for your account and cannot be unsubscribed.</p>
+                                        <p>We do not sell your personal data. There may be instances where we study and analyse part or all of our IOLO account users’ experience of our website. In such instances, we may share general behaviour trends with our related or linked companies, suppliers or agents to maintain and improve on the features and benefits of our services, optimizing user experience and satisfaction as well as keeping advertising relevant.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Technology used</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>We adopt various technologies to maintain your account and the accompanying services. Servers that we adopt to store all our data may not be in Singapore. However, we have placed reasonable measures to ensure the security of your personal data.</p>
+                                        <p>We also adopt use standard Internet technology, such as web beacons and other similar technologies, to track your use on our websites. We also may include web beacons in promotional e-mail messages or newsletters to determine whether messages have been opened and acted upon. The information we obtain in this manner enables us to customize the services we offer our websites' visitors to deliver targeted advertisements and to measure the overall effectiveness of our online advertising, content, programming or other activities.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Cookies</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>We may assign your computer one or more cookies, to facilitate access to our websites, to personalize your online experience and to record information about your visit to our websites. Through the use of a cookie, we also may automatically collect information about your online activity on our websites, such as the web pages you visit, the links or advertisements you click, or the other actions you conduct while on our websites. The cookies do not store any personally identifiable information about you. Most browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies. If you choose to decline cookies, please note that you may not be able to sign in or use some of the interactive features offered on our websites.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>Advertisements</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>We may allow third parties, including our authorized service providers, advertising companies, and ad networks, to display advertisements on our websites. We and these companies may use tracking technologies, such as cookies, to collect information about users who view or interact with these advertisements and connect to our websites. Our websites do not provide any personal information to these third parties. This information allows us and these companies to deliver and gauge the effectiveness of targeted advertisements.</p>
+                                    </div>
+                                    <div class="modal-title">
+                                        <h3>How your IOLO account stays in contact with you</h3>
+                                    </div>
+                                    <div class="modal-body text-justify">
+                                        <p>From time to time, your IOLO account will contact you through SMS or emails regarding electronically distribution materials. These materials may serve to keep up your understanding of the insurance industry’s products and services and ensure you are getting a good deal for your current or future policies. You may choose to unsubscribe from such communication at any time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,2460 @@
+﻿.di {
+    display: inline
+}
+
+.db {
+    display: block
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.cl {
+    clear: left
+}
+
+.cr {
+    clear: right
+}
+
+.clear {
+    clear: both
+}
+
+.pr {
+    position: relative
+}
+
+.pa {
+    position: absolute
+}
+
+.lalign {
+    text-align: left
+}
+
+.calign {
+    text-align: center
+}
+
+.ralign {
+    text-align: right
+}
+
+.talign {
+    vertical-align: top
+}
+
+.malign {
+    vertical-align: middle
+}
+
+.balign {
+    vertical-align: bottom
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-weight: 400
+}
+
+h1 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    line-height: 40px
+}
+
+h2 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase
+}
+
+h3 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    line-height: 28px
+}
+
+h4 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 22px
+}
+
+h5 {
+    font-family: helvetica,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400 !important
+}
+
+p {
+    font-family: open sans !important
+}
+
+.f10 {
+    font-size: 10px
+}
+
+.f12 {
+    font-size: 12px
+}
+
+.f14 {
+    font-size: 14px
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.nav > li > a {
+    display: initial;
+    padding: 0 18px;
+    position: relative
+}
+
+a {
+    color: #00a4e4;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 0;
+    text-decoration: none
+}
+
+    a:hover {
+        color: #27b7e6;
+        text-decoration: none
+    }
+
+    a:focus {
+        outline: none
+    }
+
+.mt5 {
+    margin-top: 5px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mt30 {
+    margin-top: 30px
+}
+
+.mt40 {
+    margin-top: 40px
+}
+
+.mt70 {
+    margin-top: 70px
+}
+
+.mt50 {
+    margin-top: 50px
+}
+
+.mt100 {
+    margin-top: 100px
+}
+
+.mt200 {
+    margin-top: 200px
+}
+
+.mr5 {
+    margin-right: 5px
+}
+
+.mr10 {
+    margin-right: 10px
+}
+
+.mr20 {
+    margin-right: 20px
+}
+
+.mr30 {
+    margin-right: 30px
+}
+
+.mr40 {
+    margin-right: 40px
+}
+
+.mr50 {
+    margin-right: 50px
+}
+
+.mr150 {
+    margin-right: 150px
+}
+
+.ml5 {
+    margin-left: 5px
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.ml20 {
+    margin-left: 20px
+}
+
+.ml30 {
+    margin-left: 30px
+}
+
+.ml40 {
+    margin-left: 40px
+}
+
+.ml50 {
+    margin-left: 50px
+}
+
+.mb5 {
+    margin-bottom: 5px
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.mb20 {
+    margin-bottom: 20px
+}
+
+.mb30 {
+    margin-bottom: 30px
+}
+
+.mb40 {
+    margin-bottom: 40px
+}
+
+.mb50 {
+    margin-bottom: 50px
+}
+
+body {
+    font-family: helvetica,Helvetica,Arial,sans-serif
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 20px 0;
+    transition: all .3s
+}
+
+.navbar-brand {
+    font-size: 0;
+    margin-top: 0;
+    padding: 0;
+    text-transform: uppercase
+}
+
+.carousel-caption {
+    bottom: 25%
+}
+
+.navbar-fixed {
+    background: #74bbd8
+}
+
+.carousel-control.right {
+    background: 0 0
+}
+
+.carousel-control.left {
+    background: 0 0
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+    height: auto;
+    width: auto
+}
+
+.carousel-caption .btn.btn-default {
+    padding: 12px 38px !important
+}
+
+    .carousel-caption .btn.btn-default.claim {
+        padding: 12px 38px !important;
+        background: #fff !important;
+        color: #000
+    }
+
+.btn.btn-default.dropdown-toggle.mt30:hover {
+    background-color: #000;
+    color: #fff !important
+}
+
+table {
+    width: 100%
+}
+
+td, th {
+    padding: 10px;
+    display: inline-flex
+}
+
+    td label {
+        font-size: 12pt;
+        padding: 0 5px
+    }
+
+.g-recaptcha {
+    text-align: center
+}
+
+.noticemsg {
+    font-size: medium;
+    border-radius: 8px;
+    border: 3px solid #c1e2b3;
+    background-color: #d0e9c6;
+    color: #000
+}
+
+#enquiry_errormsg {
+    margin-top: 30px
+}
+
+.navbar-nav > li {
+    float: left;
+    padding-top: 5px
+}
+
+.nav.navbar-nav.mr150 {
+    padding-top: 9px
+}
+
+.collapse.navbar-collapse.main-nav.navbar-right {
+    margin-top: 10px;
+    overflow-y: hidden;
+    max-height: none !important
+}
+
+.glyphicon {
+    border: 0 solid;
+    border-radius: 100px;
+    padding: 12px
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background: 0 0
+}
+
+.nav.navbar-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff
+}
+
+.dropdown-content > a {
+    color: #323232 !important;
+    padding: 10px 30px 40px 23px !important
+}
+
+.btn.btn-default.dropdown-toggle {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 38px
+}
+
+.btn.btn-default.submit-toggle {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #000;
+    font-size: 20px;
+    padding: 5px 38px
+}
+
+.navbar-inverse {
+    border-color: rgba(255,255,255,.1)
+}
+
+.carousel-caption h1 {
+    font-size: 45px;
+    font-weight: 700
+}
+
+    .carousel-caption h1 span {
+        color: #87ceeb
+    }
+
+.carousel-caption p {
+    font-family: open sans;
+    font-size: 21px;
+    padding: 0 210px
+}
+
+.about-us {
+    padding: 100px 0
+}
+
+    .about-us .sub-heading {
+        color: #323232;
+        font-family: open sans;
+        font-size: 20px;
+        padding: 0 13%
+    }
+
+    .about-us p {
+        color: #737070;
+        font-family: open sans;
+        font-size: 20px;
+        padding: 0 9%
+    }
+
+.services {
+    background: #add8e6 none repeat scroll 0 0;
+    padding: 50px 0 0
+}
+
+.banner .carousel-caption.claim-banner {
+    bottom: 25%;
+    padding-bottom: 15px
+}
+
+.services p {
+    font-size: 20px;
+    font-weight: 300
+}
+
+.signup-process {
+    background-color: #74bbd8;
+    color: #fff;
+    padding: 40px 0
+}
+
+    .signup-process h4 {
+        font-size: 30px;
+        line-height: 34px;
+        padding: 0 115px
+    }
+
+    .signup-process .btn.btn-default.dropdown-toggle {
+        background: #fff none repeat scroll 0 0;
+        color: #323232;
+        padding: 15px 40px
+    }
+
+.main-text {
+    color: #fff;
+    position: absolute;
+    top: 350px;
+    width: 100%
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #0e0e19;
+    color: #fff !important;
+    text-decoration: none
+}
+
+.btn-clear {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    margin-right: 15px
+}
+
+    .btn-clear:hover {
+        color: #000;
+        background-color: #fff
+    }
+
+.services .col-md-6 > img {
+    display: block
+}
+
+.about-security {
+    padding: 40px 0
+}
+
+    .about-security p {
+        font-family: open sans;
+        font-size: 19px;
+        line-height: 32px
+    }
+
+.location {
+    background: #87ceeb;
+    padding: 40px 0
+}
+
+    .location .border-right {
+        border-right: 1px solid #fff
+    }
+
+    .location img {
+        margin-top: 14px
+    }
+
+#contact-form {
+    background: #fff none repeat scroll 0 0;
+    border-top: 5px solid #4da6d8;
+    padding: 15px;
+    margin-top: -530px;
+    margin-left: 20px;
+    position: absolute;
+    width: 30%
+}
+
+    #contact-form input {
+        border-radius: 35px;
+        font-size: 20px;
+        height: 60px;
+        padding: 0 40px;
+        margin: 25px 0
+    }
+
+    #contact-form .form-control {
+        border-radius: 27px;
+        font-size: 20px;
+        padding: 0 40px
+    }
+
+iframe {
+    height: 570px
+}
+
+button.submit.btn.btn-default.dropdown-toggle.mt30 {
+    color: #000 !important;
+    padding: 10px 38px
+}
+
+    button.submit.btn.btn-default.dropdown-toggle.mt30:hover {
+        color: #fff !important;
+        padding: 10px 38px
+    }
+
+footer {
+    background: #000 none repeat scroll 0 0;
+    color: #aeaeae;
+    padding: 20px 10px
+}
+
+.social span img {
+    padding-right: 30px
+}
+
+button#start-one, button#start-two {
+    background: #4984b5;
+    padding: 5px 54px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.modal-footer button.submit.btn.btn-default.dropdown-toggle.mt30 {
+    background: #4984b5 !important;
+    color: #fff !important;
+    padding: 10px 51px
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background: 0 0
+}
+
+button#start-one:hover {
+    background: #74bbd9;
+    padding: 5px 54px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-content {
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    display: none;
+    left: -30%;
+    min-width: 202px;
+    position: absolute;
+    z-index: 1
+}
+
+    .dropdown-content a {
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block
+    }
+
+.dropbtn {
+    background: transparent none repeat scroll 0 0;
+    border: 0
+}
+
+.dropdown:hover .dropdown-content {
+    display: block
+}
+
+.how-work {
+    margin: 0;
+    padding: 0 !important
+}
+
+.main-nav .dropdown .dropdown-menu a {
+    border-bottom: 1px solid #aeaeae;
+    color: #000;
+    padding: 13px 22px 6px 20px
+}
+
+.claims-discription {
+    font-family: helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 49px;
+    padding: 0;
+    text-transform: uppercase
+}
+
+.img-responsive.man {
+    margin-top: 80px
+}
+
+.banner .carousel-caption.claim-banner {
+    bottom: 25%;
+    padding-bottom: 140px;
+    width: 100%;
+    left: 0;
+    right: 0
+}
+
+.claim-intro {
+    padding: 100px 0
+}
+
+.claim-para {
+    color: #5e5e5e;
+    font-family: open sans;
+    font-size: 20px;
+    padding: 0 180px
+}
+
+.claim-border {
+    border: 1px solid #ccc;
+    padding: 40px
+}
+
+.btn.btn-default.dropdown-toggle:hover, .btn.btn-default.submit-toggle:hover {
+    background-color: #0a0a0a !important;
+    color: #fff;
+    border: 1px solid #4682b4;
+    -webkit-transition: width 1s,height 2s,background-color 1s,-webkit-transform 2s;
+    transition: width 2s,height 2s,background-color 1s,transform 2s
+}
+
+.col-xs-12.claim-border {
+    padding: 50px 0
+}
+
+.steps {
+    background: transparent url(./../images/step-bg.png) no-repeat scroll 50% 0;
+    margin: auto;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    padding-bottom: 50px
+}
+
+.mt50.top-space {
+    margin-top: 191px
+}
+
+.right-sdie-space {
+    padding-right: 30%
+}
+
+.left-sdie-space {
+    padding-left: 30%
+}
+
+.steps h3 {
+    font-family: helvetica;
+    font-size: 30px;
+    font-weight: 700
+}
+
+.steps p {
+    font-family: open sans;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.orange {
+    color: #ff6d3b
+}
+
+.blue {
+    color: #0575a5
+}
+
+.green {
+    color: #c2d457
+}
+
+.black {
+    color: #000
+}
+
+.btn.btn-default.dropdown-toggle.signup {
+    background-color: #4682b4;
+    padding: 15px 45px
+}
+
+.banner .carousel-caption p {
+    font-family: open sans;
+    font-size: 21px;
+    margin-bottom: 30px;
+    padding: 0 120px
+}
+
+.modal-content.row.login {
+    text-align: center
+}
+
+    .modal-content.row.login p {
+        font-size: 18px;
+        font-family: open sans
+    }
+
+.confirmation {
+    font-size: 19px;
+    color: #000
+}
+
+.modal-header .close:hover {
+    background: #000;
+    color: #fff;
+    transition: all .3s
+}
+
+.steps2 {
+    background: transparent url(./../images/step-bg2.png) no-repeat scroll 50% 0;
+    margin: auto;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    padding-bottom: 50px
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding: 2px 15px
+}
+
+    .modal-header .close {
+        color: #fff !important;
+        font-size: 40px;
+        margin-top: -12px;
+        position: relative;
+        right: -75px;
+        top: -5px;
+        background: #74bbd9;
+        opacity: initial;
+        padding: 13px 24px;
+    }
+
+.social-content {
+    background-color: #87ceeb;
+    padding: 15px 8px 0 10px
+}
+
+.col-md-6.col-sm-6.col-xs-12.space {
+    padding: 0;
+    color: #fff
+}
+
+.testimonee-img {
+    width: 300px;
+    border: 5px solid #fff;
+    border-radius: 150px
+}
+
+.testimonee-statement {
+    vertical-align: middle;
+    font-size: 20pt
+}
+
+.whois {
+    text-align: right;
+    font-size: 15pt
+}
+
+.modal .login .form-img {
+    height: 100%;
+    min-height: 554px
+}
+
+.first-form {
+    padding: 0 60px;
+    padding-bottom: 160px
+}
+
+    .first-form .form-section .form-group input {
+        border-radius: 35px;
+        font-size: 20px;
+        height: 60px;
+        padding: 0 40px
+    }
+
+    .first-form .form-group .multi-entry {
+        border-radius: 35px;
+        font-size: 20px;
+        height: 60px !important;
+        padding: 0 40px
+    }
+
+    .first-form .form-group input {
+        height: 61px;
+        border-radius: 35px;
+        padding: 6px 35px;
+        font-family: open sans;
+        font-size: 19px;
+        font-weight: 400;
+        color: #8a8888
+    }
+
+.main-disc h2 {
+    font-weight: 500;
+    line-height: 51px;
+    padding: 40px 210px
+}
+
+.facebook-message h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px
+}
+
+.facebook-message .text-left {
+    padding: 50px 40px
+}
+
+.navbar-fixed .btn.btn-default.dropdown-toggle {
+    border-color: #74bbd8
+}
+
+#map {
+    width: 100%;
+    height: 600px
+}
+
+    #map:focus {
+        pointer-events: auto
+    }
+
+.text-left > ul {
+    font-family: open sans;
+    font-size: 19px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 14px
+}
+
+.text-left > ol {
+    font-family: open sans;
+    font-size: 19px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 14px
+}
+
+.facebook-message p {
+    font-family: open sans;
+    font-size: 19px;
+    font-weight: 400
+}
+
+.mt50.terms {
+    color: #1e1e1e;
+    text-decoration: underline;
+    line-height: 18px
+}
+
+    .mt50.terms:hover {
+        color: #000
+    }
+
+.save-money {
+    background: #add9e6;
+    padding: 30px
+}
+
+    .save-money .text-center {
+        padding: 30px
+    }
+
+    .save-money .text-center {
+        padding: 27px 30px
+    }
+
+    .save-money p {
+        font-family: open sans;
+        font-size: 19px
+    }
+
+    .save-money a {
+        color: #000;
+        font-size: 19px;
+        text-decoration: underline
+    }
+
+    .save-money img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: inline-block
+    }
+
+.modal .form-img {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url(./../images/form.png);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: auto;
+    min-height: 810px;
+    width: 30%
+}
+
+.modal .form-inline {
+    float: left;
+    height: auto;
+    min-width: 470px;
+    padding: 0 10px;
+    width: 107%
+}
+
+.form-inline > h3 {
+    font-family: helvetica;
+    font-size: 26px;
+    line-height: 37px;
+    padding: 10px 57px;
+    text-align: center
+}
+
+.modal .form-inline .form-control {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset;
+    color: #555;
+    display: block;
+    font-family: open sans;
+    font-size: 15px;
+    height: 52px;
+    line-height: 1.42857;
+    padding: 0 29px;
+    transition: border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+    width: 100% !important
+}
+
+.modal .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle
+}
+
+.modal-body .text-center {
+    font-family: open sans;
+    font-size: 14px
+}
+
+.modal-header.modal-border {
+    border-bottom: 1px solid #dedede
+}
+
+    .modal-header.modal-border .text-right {
+        font-size: 24px;
+        text-transform: uppercase
+    }
+
+.text-left.mt30 {
+    padding-left: 137px
+}
+
+#reward .modal-header .close {
+    font-size: 23px;
+    padding: 10px 16px;
+    right: -45px;
+    top: -6px
+}
+
+.claim-note {
+    background: #4984b5;
+    color: #fff;
+    font-family: open sans;
+    font-size: 19px
+}
+
+.claim-price {
+    font-size: 29px !important;
+    padding: 32px
+}
+
+.info {
+    font-size: 16px !important;
+    color: #7e7e7e
+}
+
+.outer-sapcing {
+    padding: 10px 36px
+}
+
+.modal-btn {
+    background-color: #4682b4;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 59px
+}
+
+.outer-sapcing .list-unstyled {
+    color: #7e7e7e;
+    font-size: 16px;
+    margin: 0
+}
+
+.btn.btn-default.dropdown-toggle.signup.modal-btn {
+    padding: 10px 55px
+}
+
+.wizard {
+    margin: 20px auto;
+    background: #fff
+}
+
+    .wizard .nav-tabs {
+        border-bottom-color: transparent;
+        margin: 22px auto 113px;
+        position: relative
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative
+    }
+
+.connecting-line {
+    background: #e0e0e0 none repeat scroll 0 0;
+    height: 1px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 44px;
+    width: 88%;
+    z-index: inherit
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px
+}
+
+    span.round-tab i {
+        color: #555
+    }
+
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #5bc0de
+}
+
+    .wizard li.active span.round-tab i {
+        color: #5bc0de
+    }
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333
+}
+
+.wizard .nav-tabs > li {
+    width: 33%
+}
+
+label {
+    color: #000 !important;
+    display: inline-block;
+    font-family: open sans;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    max-width: 100%;
+    width: 100%
+}
+
+.form-group > p {
+    color: #aeaeae;
+    font-size: 16px !important;
+    text-align: left
+}
+
+.modal-open .modal {
+    overflow-x: inherit;
+    overflow-y: auto
+}
+
+.modal-open .tab-content {
+    height: 723px;
+    overflow: auto;
+    overflow-x: hidden;
+    min-height: 636px;
+    float: left;
+    width: 100%
+}
+
+.step3 ul li {
+    font-size: 17px;
+    color: #000;
+    font-family: Open sans;
+    line-height: 30px
+}
+
+.modal-container .glyphicon {
+    border: 0 solid;
+    border-radius: 100px;
+    padding: 12px;
+    position: absolute;
+    top: 18px;
+    left: 18%;
+    padding: 16px;
+    border: 1px solid;
+    font-size: 18px;
+    background: #4984b5;
+    color: #fff
+}
+
+.modal-footer {
+    background: #fff none repeat scroll 0 0;
+    border-top: 1px solid #e5e5e5;
+    bottom: 1px;
+    left: -11px;
+    padding: 15px 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    width: 101%
+}
+
+.wizard .nav-tabs > li a {
+    border-radius: 100%;
+    height: 70px;
+    padding: 0;
+    width: 70px
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: 0 0;
+        box-shadow: none;
+        border: 0
+    }
+
+.step2 .form-group {
+    width: 100%;
+    margin-right: 8px;
+    float: left
+}
+
+.checkbox label {
+    width: 166px
+}
+
+.step2 .checkbox label {
+    width: 237px
+}
+
+.step2 .checkbox {
+    display: inline-block;
+    width: 25%
+}
+
+.step2 .submit.btn.btn-default.dropdown-toggle {
+    background: #5bc0de none repeat scroll 0 0;
+    color: #fff;
+    padding: 10px 57px
+}
+
+.wizard h3 {
+    margin-top: 0
+}
+
+.step1 .row {
+    margin-bottom: 10px
+}
+
+.step_21 {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.step33 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px
+}
+
+.dropselectsec {
+    width: 68%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 400
+}
+
+.dropselectsec1 {
+    width: 74%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: 400
+}
+
+.mar_ned {
+    margin-bottom: 10px
+}
+
+.wdth {
+    width: 25%
+}
+
+.birthdrop {
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    width: 16%;
+    outline: 0;
+    font-weight: 400
+}
+
+#accordion-container {
+    font-size: 13px
+}
+
+.accordion-header {
+    font-size: 13px;
+    background: #ebebeb;
+    margin: 5px 0 0;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+
+.unselect_img {
+    width: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.active-header {
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background: #f53b27
+}
+
+    .active-header:after {
+        content: "\f068";
+        font-family: fontawesome;
+        float: right;
+        margin: 5px;
+        font-weight: 400
+    }
+
+.inactive-header {
+    background: #333
+}
+
+    .inactive-header:after {
+        content: "\f067";
+        font-family: fontawesome;
+        float: right;
+        margin: 4px 5px;
+        font-weight: 400
+    }
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px
+}
+
+    .accordion-content a {
+        text-decoration: none;
+        color: #333
+    }
+
+    .accordion-content td {
+        border-bottom: 1px solid #dcdcdc
+    }
+
+.next {
+    border: 1px solid #323232;
+    background: #000 !important;
+    color: #fff !important
+}
+
+.promovid > iframe {
+    width: 100%
+}
+
+@media(min-width:1920px) {
+    .carousel-caption h1 {
+        font-size: 46px;
+        font-weight: 700
+    }
+
+    .carousel-caption p {
+        font-family: open sans;
+        font-size: 18px
+    }
+
+    .carousel-inner {
+        height: auto
+    }
+}
+
+@media(max-width:1552px) {
+    .main-disc h2 {
+        font-size: 20px;
+        line-height: 34px;
+        padding: 9px 60px
+    }
+
+    .carousel-caption h1 {
+        font-size: 40px;
+        font-weight: 700
+    }
+
+    .carousel-caption p {
+        font-family: open sans;
+        font-size: 15px;
+        padding: 0 9px
+    }
+
+    .carousel-inner {
+        height: auto
+    }
+
+    .nav.navbar-nav.mr150 {
+        margin: 0
+    }
+
+    .carousel-caption .btn-group.mt50 {
+        margin-top: 6px
+    }
+
+    .about-us .sub-heading {
+        color: #323232;
+        font-family: open sans;
+        font-size: 17px
+    }
+
+    .navbar-brand > img {
+        display: block;
+        width: 84%
+    }
+
+    #contact-form {
+        margin-left: 280px;
+        width: 30%
+    }
+}
+
+@media(max-width:1390px) {
+    .modal-content.row.login {
+        height: initial;
+        overflow: auto
+    }
+
+    .modal-header.modal-border .text-right {
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .facebook-message .text-left {
+        padding: 2px 40px
+    }
+
+    .facebook-message p {
+        font-family: open sans;
+        font-size: 15px;
+        font-weight: 400
+    }
+
+    .carousel-caption h1 {
+        font-size: 27px;
+        margin: 0;
+        font-weight: 700
+    }
+
+    .signup-process h4 {
+        padding: 0
+    }
+
+    .about-us .sub-heading {
+        padding: 0
+    }
+
+    .services p {
+        font-size: 14px;
+        font-weight: 300
+    }
+
+    .services h3 {
+        margin: 0
+    }
+
+    .banner .carousel-caption.claim-banner {
+        bottom: 25%;
+        padding-bottom: 60px
+    }
+
+    .carousel-caption .btn.btn-default.claim {
+        background: #fff none repeat scroll 0 0 !important;
+        color: #000
+    }
+
+    .claim-para {
+        color: #5e5e5e;
+        font-family: open sans;
+        font-size: 18px;
+        padding: 0
+    }
+
+    .services .list-unstyled > li {
+        min-height: 119px
+    }
+
+    .banner .carousel-caption.claim-banner {
+        bottom: 25%;
+        padding-bottom: 50px
+    }
+
+    .banner .carousel-caption p {
+        font-family: open sans;
+        font-size: 21px;
+        margin-bottom: 30px;
+        padding: 0
+    }
+}
+
+@media(max-width:995px) {
+    .step2 .form-group {
+        float: left;
+        margin-bottom: 30px;
+        margin-right: 8px;
+        width: 100%
+    }
+
+    #reward .modal-header .close {
+        font-size: 23px;
+        padding: 10px 16px;
+        right: -15px;
+        top: -3px
+    }
+
+    .first-form .form-group input {
+        height: 45px
+    }
+
+    .step2 .checkbox {
+        display: inline-block;
+        width: 50%
+    }
+
+    .modal-header .close {
+        background: #74bbd9 none repeat scroll 0 0;
+        color: #fff !important;
+        font-size: 23px;
+        margin-top: -12px;
+        opacity: initial;
+        padding: 13px 24px;
+        position: absolute;
+        right: -15px;
+        top: -3px
+    }
+
+    .modal-header {
+        border-bottom: 0;
+        padding-top: 25px
+    }
+
+    .col-md-8.col-sm-8.col-xs-12.text-right.sec-step {
+        text-align: left
+    }
+
+    .modal .form-inline {
+        float: unset;
+        height: auto;
+        min-width: auto;
+        padding: 0;
+        width: auto
+    }
+
+    .modal .form-img {
+        display: none
+    }
+
+    .main-nav .btn.btn-default.dropdown-toggle {
+        padding: 5px 20px !important
+    }
+
+    .facebook-message .text-left {
+        padding: 3px 22px
+    }
+
+    .save-money {
+        background: #add9e6;
+        padding: 0
+    }
+
+        .save-money p {
+            font-family: open sans;
+            font-size: 16px
+        }
+
+    .text-left > ul {
+        font-family: open sans;
+        font-size: 19px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-left: 14px
+    }
+
+    .facebook-message p {
+        font-family: open sans;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 10px;
+        padding-bottom: 0
+    }
+
+    .facebook-message .text-left {
+        padding: 3px 28px
+    }
+
+    .facebook-message h3 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px
+    }
+
+    .facebook-message .text-left > ul {
+        font-family: open sans;
+        font-size: 16px
+    }
+
+    .facebook-message .btn.btn-default.dropdown-toggle.signup {
+        background-color: #4682b4;
+        padding: 11px 42px
+    }
+
+    .facebook-messag .text-left > ul {
+        font-family: open sans;
+        font-size: 19px;
+        margin-bottom: 30px;
+        margin-top: 13px;
+        padding-left: 14px
+    }
+
+    .form-section form input {
+        border-radius: 35px;
+        font-size: 20px;
+        height: 40px;
+        padding: 0 40px
+    }
+
+    .form-section form {
+        background: #fff none repeat scroll 0 0;
+        border-top: 5px solid #4da6d8;
+        bottom: 48px;
+        padding: 30px;
+        position: absolute;
+        width: 60%
+    }
+
+    iframe {
+        height: 510px
+    }
+
+    .steps {
+        background: transparent none repeat scroll 0 0
+    }
+
+    .faq p {
+        font-size: 12pt
+    }
+
+    .mt50.top-space {
+        margin: 0
+    }
+
+    .right-sdie-space {
+        padding: 0
+    }
+
+    .left-sdie-space {
+        padding-left: 0
+    }
+
+    .steps .row {
+        margin-bottom: 70px
+    }
+
+    .steps.steps2 .mt70 {
+        margin-top: 6px;
+        text-align: left
+    }
+
+    .steps.steps2 button.btn.btn-default.dropdown-toggle.signup {
+        margin-top: 30px
+    }
+
+    .btn.btn-default.dropdown-toggle.signup {
+        background-color: #4682b4;
+        padding: 15px 45px;
+        margin-top: 20px
+    }
+
+    .location img {
+        margin-top: 0
+    }
+
+    .location .email {
+        margin-top: 0;
+        padding-bottom: 0
+    }
+
+    .about-security .mt100 {
+        margin-top: 20px
+    }
+
+    .services .col-md-6 > img {
+        display: none
+    }
+
+    .nav.navbar-nav li a {
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none
+    }
+
+    .banner .carousel-caption p {
+        font-family: open sans;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding: 0
+    }
+
+    .carousel-caption .btn.btn-default.claim {
+        background: #fff none repeat scroll 0 0 !important;
+        color: #000
+    }
+
+    .banner .carousel-caption.claim-banner {
+        bottom: 25%;
+        padding-bottom: 10px
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+        font-weight: 700
+    }
+
+    .facebook-message .text-left {
+        padding: 2px 40px
+    }
+}
+
+@media(max-width:800px) {
+    .navbar-right .btn.btn-default {
+        font-size: 17px !important
+    }
+
+    .modal-content.row.login {
+        overflow: auto
+    }
+
+    .modal-open .tab-content {
+        float: left;
+        height: 682px;
+        min-height: 266px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%
+    }
+
+    #reward .modal-header .close {
+        font-size: 23px;
+        padding: 10px 16px;
+        right: -15px;
+        top: -3px
+    }
+
+    .modal-header.modal-border .text-right {
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .facebook-message .text-left {
+        padding: 2px 40px
+    }
+
+    .btn.btn-default.dropdown-toggle {
+        background: transparent none repeat scroll 0 0;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 16px;
+        padding: 5px 36px
+    }
+
+    .nav.navbar-nav.mr150 {
+        text-align: left
+    }
+
+    .navbar-collapse .dropdown .dropdown-menu {
+        background: #74bbd8 none repeat scroll 0 0;
+        border: 0;
+        position: unset;
+        text-align: left;
+        width: 100%
+    }
+
+    .radio label, .checkbox label {
+        min-height: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        width: 100%;
+        font-weight: 400;
+        cursor: pointer
+    }
+
+    iframe {
+        height: 250px
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+        font-weight: 700
+    }
+
+    .services .col-md-6 > img {
+        width: 100%
+    }
+
+    .benefit-image {
+        width: 100%;
+        padding: 10% 25%
+    }
+
+    .signup-process h4 {
+        padding: 0
+    }
+
+    .about-us .sub-heading {
+        padding: 0
+    }
+
+    .carousel-caption {
+        padding-bottom: 0
+    }
+
+    .serivces .list-unstyled.mt100 {
+        margin-top: 100px !important
+    }
+
+    .img-responsive.man {
+        display: none !important
+    }
+
+    .about-security .img-responsive {
+        display: inline-block;
+        left: 0;
+        right: 0
+    }
+
+    .about-security .about {
+        text-align: center
+    }
+
+    .about-security .col-md-6.col-sm-12.mt100 {
+        margin: 0
+    }
+
+    .banner .carousel-caption.claim-banner {
+        bottom: 25%;
+        padding-bottom: 20px
+    }
+
+    .carousel-caption h1 {
+        margin: 0
+    }
+
+    .claim-intro {
+        padding: 50px 0
+    }
+
+    .form-section form {
+        position: unset !important
+    }
+
+    .nav.navbar-nav li a {
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none
+    }
+
+    .banner .carousel-caption p {
+        font-family: open sans;
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding: 0
+    }
+
+    .carousel-caption .btn.btn-default.claim {
+        background: #fff none repeat scroll 0 0 !important;
+        color: #000
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        background: #74bbd8 none repeat scroll 0 0 !important;
+        left: 0;
+        position: unset;
+        right: 0;
+        margin-bottom: 0
+    }
+
+    .steps img.img-responsive {
+        display: inline-block
+    }
+
+    section.steps {
+        text-align: center !important
+    }
+
+    .col-md-8.col-sm-8.col-xs-12.text-right.sec-step {
+        text-align: center
+    }
+
+    .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 0
+    }
+
+    #contact-form {
+        margin: 0;
+        width: 100%;
+        position: relative
+    }
+
+    #enquiry_errormsg {
+        margin-top: 0;
+        margin-bottom: 15px
+    }
+}
+
+@media(max-width:767px) {
+    .modal-header.modal-border .text-right {
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .facebook-message .text-left {
+        padding: 2px 40px
+    }
+
+    .steps.steps2 .mt70 {
+        margin-top: 6px;
+        text-align: center
+    }
+
+    .main-disc h2 {
+        font-size: 17px;
+        line-height: 32px;
+        padding: 0
+    }
+
+    .main-nav .dropdown .dropdown-menu a {
+        border-bottom: 0;
+        color: #8f8f8f;
+        padding: 13px 22px 6px 20px
+    }
+
+    .navbar-collapse .dropdown .dropdown-menu {
+        background: #74bbd8 none repeat scroll 0 0;
+        border: 0;
+        position: unset;
+        text-align: left;
+        width: 100%
+    }
+
+    .navbar-nav > li {
+        float: left;
+        margin-bottom: 9px;
+        padding-top: 18px;
+        width: 100%
+    }
+
+    .navbar-nav > li {
+        border-bottom: 1px solid;
+        float: left;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        width: 100%
+    }
+
+    .navbar-collapse .btn-group, .btn-group-vertical {
+        display: block;
+        margin: 21px 0;
+        position: relative;
+        vertical-align: middle
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #101010;
+        text-align: center
+    }
+
+    iframe {
+        height: 250px
+    }
+
+    .form-section form {
+        background: #fff none repeat scroll 0 0;
+        border-top: 5px solid #4da6d8;
+        bottom: 48px;
+        padding: 30px;
+        position: absolute;
+        width: 100%
+    }
+}
+
+@media(max-width:650px) {
+    .save-money .text-center {
+        padding: 0;
+        font-size: 22px;
+        line-height: 26px
+    }
+
+    .form-inline > h3 {
+        font-family: helvetica;
+        font-size: 19px;
+        line-height: 27px;
+        padding: 0;
+        text-align: center
+    }
+
+    .checkbox > label {
+        width: 100%
+    }
+
+    .navbar-collapse.main-nav .btn.btn-default.dropdown-toggle {
+        left: 0;
+        right: 0;
+        margin-top: 10px
+    }
+
+    .carousel-caption {
+        bottom: 7%
+    }
+
+    .carousel-inner img {
+        height: 249px !important
+    }
+
+    .carousel-control {
+        display: none
+    }
+
+    .carousel-inner {
+        overflow: hidden;
+        position: relative;
+        top: 50%;
+        width: 100%
+    }
+
+    .btn.btn-default.dropdown-toggle {
+        background: transparent none repeat scroll 0 0;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 14px;
+        padding: 0 4px
+    }
+
+    .carousel-caption .btn.btn-default.claim {
+        background: #fff none repeat scroll 0 0 !important;
+        color: #000;
+        padding: 5px 15px !important
+    }
+
+    .carousel-caption .btn.btn-default {
+        padding: 5px 11px !important
+    }
+
+    .services .col-md-6 > img {
+        width: 100%;
+        display: none
+    }
+
+    .contact iframe {
+        float: none !important
+    }
+
+    .form-section form {
+        position: unset !important
+    }
+
+    footer {
+        background: #000 none repeat scroll 0 0;
+        color: #aeaeae;
+        padding: 10px 10px 0;
+        text-align: center
+    }
+
+    .services .list-unstyled > li {
+        min-height: 136px
+    }
+
+    .services p {
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 0
+    }
+
+    .services h3 {
+        font-size: 17px
+    }
+
+    .list-unstyled.mt100 {
+        margin-top: 50px
+    }
+
+    .about-us p {
+        font-size: 16px;
+        padding: 0
+    }
+
+    .about-us .sub-heading {
+        color: #323232;
+        font-family: open sans;
+        font-size: 17px
+    }
+
+    .about-us {
+        padding: 39px 0
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        background: #74bbd8 none repeat scroll 0 0 !important;
+        left: 0;
+        position: unset;
+        right: 0
+    }
+
+    .navbar {
+        border: 1px solid transparent;
+        margin-bottom: 0;
+        min-height: 50px;
+        position: relative
+    }
+
+    .carousel-inner img {
+        height: 249px !important;
+        width: 100%
+    }
+
+    .claim-para {
+        color: #5e5e5e;
+        font-family: open sans;
+        font-size: 18px;
+        padding: 0 5px
+    }
+
+    .claim-intro {
+        padding-top: 20px
+    }
+
+    .banner img {
+        height: 210px;
+        width: 100%
+    }
+
+    .btn.btn-default.dropdown-toggle {
+        font-size: 16px;
+        padding: 13px 70px;
+        margin-bottom: 21px
+    }
+
+    .col-md-8.col-sm-8.col-xs-12.text-right {
+        text-align: center
+    }
+
+    .steps {
+        background: transparent none repeat scroll 0 0;
+        text-align: center !important
+    }
+
+    .nav.navbar-nav li a {
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none;
+        padding: 0
+    }
+
+    h2 {
+        font-family: helvetica neue,Helvetica,Arial,sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+        font-weight: 700
+    }
+
+    .carousel-caption {
+        left: 0;
+        padding-bottom: 0;
+        right: 20%;
+        width: 100%
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #101010;
+        text-align: center
+    }
+
+    .navbar-nav > li {
+        float: left;
+        margin-bottom: 9px;
+        padding-top: 18px;
+        width: 100%
+    }
+
+    .navbar-collapse .btn-group {
+        margin-top: 15px
+    }
+
+    .carousel-caption h1 {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px
+    }
+
+    .carousel-caption p {
+        font-family: open sans;
+        font-size: 13px;
+        padding: 0
+    }
+
+    .signup-process h4 {
+        font-size: 20px;
+        line-height: 27px;
+        padding: 0
+    }
+
+    iframe {
+        height: auto
+    }
+
+    .form-section form input {
+        border-radius: 35px;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 40px
+    }
+
+    .about-security p {
+        font-family: open sans;
+        font-size: 14px;
+        line-height: 32px
+    }
+
+    .steps .row {
+        margin-bottom: 30px
+    }
+
+    .steps p {
+        font-family: open sans;
+        font-size: 16px;
+        font-weight: 400
+    }
+
+    .claim-para {
+        color: #5e5e5e;
+        font-family: open sans;
+        font-size: 13px;
+        padding: 0
+    }
+
+    .claim-border {
+        border: 1px solid #ccc;
+        padding: 5px
+    }
+
+    .steps.steps2 .col-md-8.text-left.mt70 {
+        text-align: center
+    }
+
+    .form-section form {
+        padding: 5px;
+        text-align: center
+    }
+
+    .form-control {
+        font-size: 14px
+    }
+}
+
+@media(max-width:400px) {
+    label {
+        font-family: open sans;
+        font-size: 15px
+    }
+
+    .first-form .form-group .multi-entry {
+        border-radius: 35px;
+        font-size: 16px;
+        height: 60px !important;
+        padding: 0 40px
+    }
+
+    .first-form .form-group input {
+        border-radius: 35px;
+        color: #8a8888;
+        font-family: open sans;
+        font-size: 16px;
+        font-weight: 400;
+        height: 61px;
+        padding: 6px 35px
+    }
+
+    .modal-content.row.login {
+        overflow: auto
+    }
+
+    .step2 .checkbox {
+        display: inline-block;
+        width: 100%
+    }
+
+    .wizard h3 {
+        font-size: 21px
+    }
+
+    span.round-tab {
+        left: -18px
+    }
+
+    label {
+        font-family: open sans;
+        font-size: 17px
+    }
+
+    .modal .img-responsive.pull-left {
+        float: unset !important
+    }
+
+    .modal .text-left.mt30 {
+        padding-left: 0
+    }
+
+    .claim-body {
+        text-align: center
+    }
+
+    .modal-body.claim-body {
+        text-align: -moz-center
+    }
+
+    .main-disc h2 {
+        font-size: 17px;
+        line-height: 32px;
+        padding: 0
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #101010;
+        text-align: center
+    }
+
+    .confirmation {
+        color: #000;
+        font-size: 16px
+    }
+
+    .navbar-nav > li {
+        float: left;
+        margin-bottom: 9px;
+        padding-top: 18px;
+        width: 100%
+    }
+
+    .navbar-collapse .btn-group {
+        margin-top: 15px
+    }
+
+    .carousel-caption h1 {
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 28px
+    }
+
+    .carousel-caption p {
+        font-family: open sans;
+        font-size: 12px;
+        padding: 0
+    }
+
+    .signup-process h4 {
+        color: #000;
+        font-size: 20px;
+        line-height: 27px;
+        padding: 0
+    }
+
+    iframe {
+        height: auto
+    }
+
+    .form-section form input {
+        border-radius: 35px;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 40px
+    }
+
+    .about-security p {
+        font-family: open sans;
+        font-size: 14px;
+        line-height: 32px
+    }
+
+    .steps .row {
+        margin-bottom: 30px
+    }
+
+    .steps p {
+        font-family: open sans;
+        font-size: 16px;
+        margin-bottom: 29px;
+        font-weight: 400
+    }
+
+    .claim-para {
+        color: #5e5e5e;
+        font-family: open sans;
+        font-size: 13px;
+        padding: 0
+    }
+
+    .claim-border {
+        border: 1px solid #ccc;
+        padding: 5px
+    }
+
+    .steps.steps2 .col-md-8.text-left.mt70 {
+        text-align: center
+    }
+
+    .form-section form {
+        padding: 5px;
+        text-align: center
+    }
+
+    .form-control {
+        font-size: 14px
+    }
+
+    .btn.btn-default.dropdown-toggle {
+        font-size: 14px;
+        padding: 13px 70px;
+        margin-bottom: 21px
+    }
+
+    .carousel-caption .btn.btn-default.claim {
+        background: #fff none repeat scroll 0 0 !important;
+        color: #000;
+        padding: 5px 7px !important
+    }
+}
