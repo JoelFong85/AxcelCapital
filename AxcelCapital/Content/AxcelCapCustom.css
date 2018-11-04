@@ -1,5 +1,17 @@
-﻿.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+﻿/*Body*/
+html, body {
+    width: 100%;
+}
+
+
+/*NavBar*/ 
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: #01AED2;
+}
+
+.navbar-brand > img {
+    width: 150px;
 }
 
 .dropdown-item:active {
@@ -7,6 +19,15 @@
     text-decoration: none;
     background-color: #01AED2;
 }
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/*Terms of Service Modal*/
 
 #termsOfService {
     color: black;
@@ -20,10 +41,7 @@
         text-decoration-color: initial;
     }
 
-.nav-item {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 .modal-header .close {
     color: #fff !important;
@@ -41,11 +59,8 @@
     padding-top: 50px;
 }
 
-.body-content {
-    margin-top: 80px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
+/*Carousel Section*/
 
 .carousel-title {
     position: absolute;
@@ -55,9 +70,23 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: #01AED2;
-    font-size: 50px;
-    font-weight: bold;
+    /*font-size: 5vw;
+    font-weight: bold;*/
     text-align: center;
+}
+
+@media (min-width: 601px) {
+    .carousel-title {
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-title {
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
 
 .carousel-description {
@@ -68,30 +97,82 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
-    font-size: 40px;
-    text-align: center;
+    font-size: 3vw;
+    text-align: left;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 
-/*.carousel-inner {
-    -webkit-filter: sepia(40%);
-}*/
+@media (min-width: 601px) {
+    .carousel-description {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-description {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.carousel-section {
+    margin-top: 80px;
+    /*padding: 0px;*/
+}
+
+
+/*section 2*/
 
 .section2 {
-    padding: 100px 20%;
-    }
+    padding: 10% 0;
+}
 
 .section2-title {
     color: #01AED2;
-    font-size: 40px;
+    font-size: 2.2vw;
     font-weight: bold;
+    text-align: left;
+    padding: 1% 15%;
 }
+
+@media (max-width: 600px) {
+    .section2-title h2 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 601px) {
+    .section2-title h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+
 
 .section2-description {
     color: #686868;
-    font-size: 20px;
+    font-size: 1.5vw;
+    padding: 1% 15%;
 }
 
+@media (max-width: 600px) {
+    .section2-description {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 601px) {
+    .section2-description p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/*Testimonial Section*/
 .testimonial-section {
     padding: 100px 0;
     background: #01AED2;
@@ -106,4 +187,36 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+/*Location Section*/
+
+#map {
+    height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+
+
+#location-card {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    z-index: 10;
+    right: 0;
+    margin-right: 5%;
+    margin-top: -550px;
+    background: #01AED2;
+}
+
+
+/*Contact us Section*/
+input,
+select,
+textarea {
+    max-width: 500px;
+}
+
+.container .contactUs h1 {
+    text-align: center;
 }
