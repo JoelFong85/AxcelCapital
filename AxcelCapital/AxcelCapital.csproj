@@ -172,6 +172,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\1.PNG" />
+    <Content Include="Images\2.PNG" />
+    <Content Include="Images\3.PNG" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\merlion_1910x1000.jpg" />
     <Content Include="Images\singapore_1910x1000.jpg" />

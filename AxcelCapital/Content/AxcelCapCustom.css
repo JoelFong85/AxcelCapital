@@ -174,8 +174,14 @@ html, body {
 
 /*Testimonial Section*/
 .testimonial-section {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #01AED2;
+}
+
+@media (min-width: 601px) {
+    .testimonial-section {
+        padding: 100px 0;
+    }
 }
 
 .gMap-col-md-12 {

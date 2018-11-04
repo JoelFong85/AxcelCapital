@@ -74,26 +74,26 @@
 
         <div class="card-deck">
             <div class="card">
-                <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                <img class="card-img-top" src="~/Images/1.PNG" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Samuel Chee <br /> CEO YellowCap Construction</h5>
+                    <p class="card-text">"The loan process was simple and easy."</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                <img class="card-img-top" src="~/Images/2.PNG" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h5 class="card-title">Mariah Sim<br />CFO Seer Investments</h5>
+                    <p class="card-text">"AxcelCapital has supported us for many years and have proved their reliability time and time again."</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                <img class="card-img-top" src="~/Images/3.PNG" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h5 class="card-title">Dennis Ho</h5>
+                    <p class="card-text">"Service matters to me. For this reason, I always go with AxcelCapital "</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -161,7 +161,7 @@
     <div class="container contactUs">
         <h1>Contact Us Today For Your Consultation</h1>
 
-        @using (Html.BeginForm())
+        @using (Html.BeginForm("SubmitQuery", "Home"))
         {
             <div class="form-group row">
                 <div class="col-md-6">
@@ -200,7 +200,7 @@
                 <label>Message</label>
                 @Html.TextAreaFor(m => m.message, new { @class = "form-control col-md-12", @rows = "5" })
             </div>
-
+            <button type="submit" class="btn btn-primary">Submit</button>
 
         }
 
