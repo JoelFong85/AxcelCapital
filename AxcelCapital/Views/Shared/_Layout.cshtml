@@ -63,14 +63,16 @@
         <hr />
         <footer>
             <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <p>Copyright &copy; @DateTime.Now.Year Axcel Capital Pte Ltd. All Rights Reserved</p>
-                    </div>
-                    <div>
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
                         <p><a id="termsOfService" href="#" data-toggle="modal" data-target="#terms-modal">Terms Of Service & Privacy Policy</a></p>
                     </div>
+                    <div class="col-md-6 col-xs-12">
+                        <p>Copyright &copy; @DateTime.Now.Year Axcel Capital Pte Ltd. All Rights Reserved</p>
+                    </div>
                 </div>
+
             </div>
         </footer>
 
@@ -230,7 +232,7 @@
         </div>
 
     </div>
-    
+
 
 
     @Scripts.Render("~/bundles/jquery")

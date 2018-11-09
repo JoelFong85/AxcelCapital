@@ -3,8 +3,15 @@ html, body {
     width: 100%;
 }
 
+/*Footer*/
 
-/*NavBar*/ 
+@media (max-width: 650px) {
+    footer {
+        text-align: center;
+    }
+}
+
+/*NavBar*/
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: #01AED2;
@@ -132,7 +139,7 @@ html, body {
     color: #01AED2;
     font-size: 2.2vw;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     padding: 1% 15%;
 }
 
@@ -155,6 +162,7 @@ html, body {
     color: #686868;
     font-size: 1.5vw;
     padding: 1% 15%;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -217,12 +225,156 @@ html, body {
 
 
 /*Contact us Section*/
+.contactUs h1 {
+    text-align: center;
+}
+
+.contactUs-title {
+    color: #01AED2;
+    font-size: 2.2vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+@media (max-width: 600px) {
+    .contactUs-title {
+        padding: 10% 10%;
+    }
+
+        .contactUs-title h2 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+}
+
+@media (min-width: 601px) {
+    .contactUs-title h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+
 input,
 select,
 textarea {
     max-width: 500px;
 }
 
-.container .contactUs h1 {
+.bigTextArea {
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.form-error {
+    color: #F65D7B;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.form-radiobtn {
+    display: inline;
+}
+
+.btn-wrapper {
     text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .btn-wrapper {
+        padding: 20px;
+    }
+}
+
+
+.btn-primary {
+    color: #fff;
+    font-size:25px;
+    background-color: #01AED2;
+    border-color: #01AED2;
+    height: 60px;
+    width: 150px
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        font-size: 20px;
+        background-color: #114369;
+        border-color: #114369;
+    }
+
+.form-control {
+    border: none;
+    border-bottom: 1.5px solid #114369;
+    border-radius: 0;
+}
+
+    .form-control:focus {
+        border: none;
+        box-shadow: none;
+        border-bottom: 1.5px solid #01AED2;
+    }
+
+
+.contactUs-Form div {
+    position: relative;
+}
+
+.contactUs-Form label {
+    font-weight: 500;
+}
+
+.moving-label {
+    position: absolute;
+    top: 10px;
+    pointer-events: none;
+    z-index: 10;
+    color: #999;
+    transition: 0.5s;
+}
+
+
+.contactUs-Form input:focus + label,
+.contactUs-Form textarea:focus + label,
+.contactUs-Form input:valid + label,
+.contactUs-Form textarea:valid + label {
+    position: absolute;
+    top: -12px;
+    color: #01AED2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.radiobtn_label_blue {
+    color: #01AED2;
+}
+
+@media (max-width: 600px) {
+    .form-group {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-xs-12 {
+        margin-bottom: 1em;
+        padding: 10px 0;
+    }
+
+    .moving-label {
+        top: 20px;
+    }
+
+    .bigTextArea {
+        padding: 0;
+        margin-top: 0;
+    }
 }

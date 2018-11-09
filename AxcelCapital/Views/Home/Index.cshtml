@@ -108,7 +108,7 @@
 
     <script>
         var map;
-        var axcelAddress = { lat: 1.353260, lng: 103.868622 };
+        var axcelAddress = { lat: 1.277400, lng: 103.849380 };
 
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
@@ -148,7 +148,7 @@
                         sweelee@axcelcapital.sg
                     </div>
                     <div>
-                        Blk 239 Serangoon Avenue 2
+                        5 Shenton Way
                     </div>
                 </div>
             </div>
@@ -158,54 +158,98 @@
 
 @*Contact Us Section*@
 <section>
-    <div class="container contactUs">
-        <h1>Contact Us Today For Your Consultation</h1>
-
-        @using (Html.BeginForm("SubmitQuery", "Home"))
-        {
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label>First Name</label>
-                    @Html.TextBoxFor(m => m.firstName, new { @class = "form-control" })
-                </div>
-                <div class="col-md-6">
-                    <label>Last Name</label>
-                    @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
-                </div>
+    <div class="container">
+        <div class="contactUs">
+            <div class="contactUs-title">
+                <h2>Contact Us Today For Your Consultation</h2>
             </div>
 
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label>Email</label>
-                    @Html.TextBoxFor(m => m.email, new { @class = "form-control" })
-                </div>
-                <div class="col-md-6">
-                    <label>Mobile</label>
-                    @Html.TextBoxFor(m => m.mobile, new { @class = "form-control" })
-                </div>
-            </div>
+            @using (Html.BeginForm("SubmitQuery", "Home", new { id = "queryForm" }))
+            {
+                <div class="contactUs-Form">
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-12">
+                            @Html.TextBoxFor(m => m.firstName, new { @class = "form-control", @required = "" })
+                            <label class="moving-label">First Name</label>
+                            @*<label class="form-error" id="usernameErrorMsg" ></label>*@
+                            @Html.ValidationMessageFor(m => m.firstName, "", new { @class = "form-error" })
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            @Html.TextBoxFor(m => m.lastName, new { @class = "form-control", @required = "" })
+                            <label class="moving-label">Last Name</label>
+                            @Html.ValidationMessageFor(m => m.lastName, "", new { @class = "form-error" })
+                        </div>
+                    </div>
 
-            <div class="form-group row">
-                <div class="col-md-6">
-                    <label>Company Name</label>
-                    @Html.TextBoxFor(m => m.companyName, new { @class = "form-control" })
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-12">
+                            @Html.TextBoxFor(m => m.email, new { @class = "form-control", @required = "" })
+                            <label class="moving-label">Email</label>
+                            @Html.ValidationMessageFor(m => m.email, "", new { @class = "form-error" })
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            @Html.TextBoxFor(m => m.mobile, new { @class = "form-control", @required = "" })
+                            <label class="moving-label">Mobile</label>
+                            @Html.ValidationMessageFor(m => m.mobile, "", new { @class = "form-error" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-12">
+                            @Html.TextBoxFor(m => m.companyName, new { @class = "form-control", @name = "txt_companyName", @required = "" })
+                            <label class="moving-label">Company Name</label>
+                            @Html.ValidationMessageFor(m => m.companyName, "", new { @class = "form-error" })
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div>
+                                <label class="radiobtn_label">Company Turnover</label>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12">
+                                        @Html.RadioButtonFor(m => m.turnOver, "< $1 million", new { @class = "form-radiobtn" }) Less than $1 million
+                                    </div>
+                                    <div class="col-md-6 col-xs-12">
+                                        @Html.RadioButtonFor(m => m.turnOver, "> $1 million", new { @class = "form-radiobtn" }) More than $1 million
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bigTextArea">
+                        @Html.TextAreaFor(m => m.message, new { @class = "form-control col-md-12", @rows = "5", @required = "" })
+                        <label class="moving-label">Enter your Message</label>
+                    </div>
+
+                    <div class="btn-wrapper">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <label>Company Turnover</label>
-                    @Html.TextBoxFor(m => m.turnOver, new { @class = "form-control" })
-                </div>
-            </div>
+            }
 
-            <div class="form-group">
-                <label>Message</label>
-                @Html.TextAreaFor(m => m.message, new { @class = "form-control col-md-12", @rows = "5" })
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-        }
-
+        </div>
     </div>
 </section>
+
+<script>
+    $(function () {
+        $('.form-radiobtn').click(function () {
+            if ($(this).is(':checked')) {
+                $('label.radiobtn_label')
+                    .addClass("radiobtn_label_blue")
+                    .removeClass("radiobtn_label");
+            }
+        });
+    });
+
+</script>
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
 
 

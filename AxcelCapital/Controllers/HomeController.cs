@@ -18,6 +18,12 @@ namespace AxcelCapital.Controllers
         [HttpPost]
         public ActionResult SubmitQuery(Query query)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View("Index");
+            }
+
             //subjectTitle
             string subjectTitle = "You have a query from " + query.firstName + " " + query.lastName;
 
@@ -68,11 +74,11 @@ namespace AxcelCapital.Controllers
                 {
                     SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
                     smtpClient.Port = 587;
-                    smtpClient.Credentials = new System.Net.NetworkCredential("joelfong@gmail.com", "fonganama");
+                    smtpClient.Credentials = new System.Net.NetworkCredential("joelfongtest@gmail.com", "P@ssword123!");
                     smtpClient.EnableSsl = true;
 
                     MailMessage mail = new MailMessage();
-                    mail.From = new MailAddress("joelfong@gmail.com");
+                    mail.From = new MailAddress("joelfongtest@gmail.com");
                     mail.To.Add("joelfong@gmail.com");
                     mail.Subject = subjectTitle;
                     mail.IsBodyHtml = true;
