@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -24,22 +25,39 @@ namespace AxcelCapital.Controllers
                 return View("Index");
             }
 
-            //subjectTitle
-            string subjectTitle = "You have a query from " + query.firstName + " " + query.lastName;
+            //var response = Request["g-recaptcha-response"];
+            //string secretKey = "6LfV1HkUAAAAAPUeSeHOzVvqQvbdPrl0J8f87qwE";
+            //var client = new WebClient();
 
-            //emailBody
+            string EncodedResponse = Request["g-recaptcha-response"];
+            bool isCaptchaValid = (Recaptcha.Validate(EncodedResponse) == "True" ? true : false);
+            if (!isCaptchaValid)
+            {
+                TempData["recaptcha"] = "Please verify that you are not a robot";
+                return View();
+            }
+            else
+            {
+                //subjectTitle
+                string subjectTitle = "You have a query from " + query.firstName + " " + query.lastName;
 
-            string emailBody = "Name: " + query.firstName + " " + query.lastName + "<br />" +
-                                "Email: " + query.email + "<br />" +
-                                "Mobile: " + query.mobile + "<br />" + 
-                                "Company Name: " + query.companyName + "<br />" +
-                                "Company Turnover: " + query.turnOver + "<br />" +
-                                "Message: " + query.message ; 
-                
+                //emailBody
+                string emailBody = "Name: " + query.firstName + " " + query.lastName + "<br />" +
+                                     "Email: " + query.email + "<br />" +
+                                     "Mobile: " + query.mobile + "<br />" +
+                                     "Company Name: " + query.companyName + "<br />" +
+                                     "Company Turnover: " + query.turnOver + "<br />" +
+                                     "Message: " + query.message;
 
-            sendMail(subjectTitle, emailBody);
 
-            return RedirectToAction("Index", "Home");
+                sendMail(subjectTitle, emailBody);
+
+                //send success msg to Action
+
+                return RedirectToAction("Index", "Home");
+            }
+
+
         }
 
         public ActionResult About()
@@ -83,7 +101,7 @@ namespace AxcelCapital.Controllers
                     mail.Subject = subjectTitle;
                     mail.IsBodyHtml = true;
                     mail.Body = emailBody;
-                                       
+
                     smtpClient.Send(mail);
                 }
                 catch (Exception ex)
