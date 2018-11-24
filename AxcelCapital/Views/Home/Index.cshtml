@@ -1,11 +1,72 @@
 ﻿@model AxcelCapital.Models.Query
 
 @{
+    /**/
+
     ViewBag.Title = "Home Page";
 }
 
 
-<div id="carouselIndicators_Front" class="carousel slide carousel-section" data-ride="carousel" data-pause="hover">
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    @*Script to Change Class on RadioBtn click*@
+    <script>
+        $(document).ready(function () {
+            $('.form-radiobtn').click(function () {
+                if ($(this).is(':checked')) {
+                    $('label.radiobtn_label')
+                        .addClass("radiobtn_label_blue")
+                        .removeClass("radiobtn_label");
+                }
+            });
+        });
+    </script>
+
+    @*Script to validate if Captcha is selected, if not, display label*@
+    <script>
+        $(document).on("submit", "form", function (e) {
+            var recaptcha = document.getElementById("g-recaptcha-response").value;
+            if (recaptcha === "") {
+                e.preventDefault();
+                console.log("Prevent Default");
+                $('#recaptcha-error-msg').show();
+                return false;
+            }
+        });
+
+    </script>
+
+    @*Script to make success message fade*@
+    <script>
+        $(document).ready(function () {
+            var successBar = $('#success-alert');
+            if (successBar.is(':visible')) {
+                console.log('visible');
+                successBar.fadeTo(5000, 500).slideUp(500, function () {
+                    $("#success-alert").slideUp(500);
+                });
+            }
+        });
+
+    </script>
+}
+
+
+
+<div class="top-margin"></div>
+
+@if (TempData["successMsg"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" id="success-alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <span>@TempData["successMsg"]</span>
+    </div>
+}
+
+
+<div id="carouselIndicators_Front" class="carousel slide" data-ride="carousel" data-pause="hover">
     <ol class="carousel-indicators">
         <li data-target="#carouselIndicators_Front" data-slide-to="0" class="active"></li>
         <li data-target="#carouselIndicators_Front" data-slide-to="1"></li>
@@ -52,55 +113,174 @@
 
 
 <section class="section2">
-    <div class="section2-title">
-        <h2>Grow with AxcelCapital</h2>
-    </div>
-    <div class="section2-description">
-        <p>
-            Business finance is complicated, unclear and often a lengthy process. We simplify and manage it for you.
-        </p>
-        <p>
-            We bridge the information gap between the funders who have the money and what they require, with businesses that require it.
-        </p>
-        <p>
-            From startup to exit, we provide complete financing management for businesses of all sizes.
-        </p>
-    </div>
-</section>
-
-<section class="testimonial-section">
-
-    <div class="container">
-
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="~/Images/1.PNG" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Samuel Chee <br /> CEO YellowCap Construction</h5>
-                    <p class="card-text">"The loan process was simple and easy."</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="container-fluid">
+        <div class="row" id="section2">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="section2-tab">
+                    <div class="section2-title">
+                        <h2>Grow with AxcelCapital</h2>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="~/Images/2.PNG" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mariah Sim<br />CFO Seer Investments</h5>
-                    <p class="card-text">"AxcelCapital has supported us for many years and have proved their reliability time and time again."</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="section2-description">
+                    <p>
+                        Business finance is complicated, unclear and often a lengthy process. We simplify and manage it for you.
+                    </p>
+                    <p>
+                        We bridge the information gap between the funders who have the money and what they require, with businesses that require it.
+                    </p>
+                    <p>
+                        From startup to exit, we provide complete financing management for businesses of all sizes.
+                    </p>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="~/Images/3.PNG" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Dennis Ho</h5>
-                    <p class="card-text">"Service matters to me. For this reason, I always go with AxcelCapital "</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="getAQuoteBtn">
+                    <a href="@Url.Action("Index", "Home")#contactUs" class="btn btn-axcelButton">Get a quote today</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="testimonial-section">
+    <h2>What our clients say about us</h2>
+    <div class="container">
+        <div class="card-deck">
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_construction.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"AxcelCapital has supported us for many years and have proved their reliability time and time again."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Samuel Chee<br />Construction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_fNb.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"Service matters to me. For this reason, I always go with AxcelCapital."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Mariah Sim<br />F&B</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_techStartup.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"The loan process was simple and comprehensive."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Dennis Ho<br />Tech Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_cleaning.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"AxcelCapital always has my back."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Silva Pillay<br />Cleaning Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_logistics.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"The folks at AxcelCapital really excel at advising on capital."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Adolphus Bronston<br />Logistics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 cards">
+                <div class="card text-white">
+                    <img class="card-img" src="~/Images/stock_oilnGas.jpg" alt="Card image">
+                    <div class="card-img-overlay overlay">
+                        <div>
+                            <h5 class="card-title">"Service matters to me. For this reason, I always go with AxcelCapital."</h5>
+                            <div class="client-signature">
+                                <p class="card-text">Susan Boi<br />Oil & Gas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="section-getInTouch">
+    <div class="section-getInTouch-title">
+        <h2>Get in Touch</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="section-getInTouch-DescriptionTitle">
+                    AxcelCapital Headquarters:
+                </div>
+                <div class="section-GetInTouch-description">
+                    <p>
+                        3 Shenton Way
+                        <br />
+                        #22-09A
+                        <br />
+                        Shenton House
+                        <br />
+                        Singapore 068805
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="section-getInTouch-DescriptionTitle">
+                    Email:
+                </div>
+                <div class="section-GetInTouch-description">
+                    <p>
+                        info@AxcelCapital.sg
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="section-getInTouch-DescriptionTitle">
+                    Phone:
+                </div>
+                <div class="section-GetInTouch-description">
+                    <p>
+                        +65 6904 5900
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="location-section">
 
@@ -140,26 +320,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBcN7lCSyMTCu9hn2PT7xTZizLhGdUsO8&callback=initMap"
             async defer></script>
 
-    @*<div class="container">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div id="location-card" class="col-md-6">
-                    <div>
-                        sweelee@axcelcapital.sg
-                    </div>
-                    <div>
-                        5 Shenton Way
-                    </div>
-                </div>
-            </div>
-        </div>*@
 </section>
 
 
 @*Contact Us Section*@
 <section>
     <div class="container">
-        <div class="contactUs">
+        <div class="contactUs" id="contactUs">
             <div class="contactUs-title">
                 <h2>Contact Us Today For Your Consultation</h2>
             </div>
@@ -229,11 +396,15 @@
                                     <div class="g-recaptcha" data-sitekey="6LfV1HkUAAAAAHtt0_TrIzKWxXIZF5msjauutXfN"></div>
                                 </div>
                                 <div class="col-xs-12 recaptcha-div">
-                                    <span id="recaptcha-error-msg" class="form-error">Please select this field</span>
+                                    <span id="recaptcha-error-msg" class="form-error">Please verify that you are not a robot</span>
+                                    @if (TempData["recaptcha"] != null)
+                                    {
+                                        <span class="form-error">@TempData["recaptcha"]</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-6 col-xs-12">
-                                <button type="submit" class="btn btn-primary" onclick="validateCaptcha()">Submit</button>
+                                <button type="submit" class="btn btn-axcelButton" onclick="validateCaptcha()">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -247,33 +418,7 @@
 
 
 
-@section scripts
-{
-    @Scripts.Render("~/bundles/jqueryval")
 
-    @*Script to Change Class on RadioBtn click*@
-    <script>
-        $(document).ready(function () {
-            $('.form-radiobtn').click(function () {
-                if ($(this).is(':checked')) {
-                    $('label.radiobtn_label')
-                        .addClass("radiobtn_label_blue")
-                        .removeClass("radiobtn_label");
-                }
-            });
-        });
-    </script>
-
-    @*Script to validate if Captcha is selected, if not, display label*@
-    <script>
-        function validateCaptcha() {
-            var recaptcha = document.getElementById("g-recaptcha-response").value;
-            if (recaptcha === "") {
-                $('#recaptcha-error-msg').show();
-            }
-        }
-    </script>
-}
 
 
 

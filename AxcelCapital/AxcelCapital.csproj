@@ -173,12 +173,24 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\1.jpg" />
     <Content Include="Images\1.PNG" />
+    <Content Include="Images\2.jpg" />
     <Content Include="Images\2.PNG" />
+    <Content Include="Images\3.jpg" />
     <Content Include="Images\3.PNG" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\5.jpg" />
+    <Content Include="Images\6.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\merlion_1910x1000.jpg" />
     <Content Include="Images\singapore_1910x1000.jpg" />
+    <Content Include="Images\stock_cleaning.jpg" />
+    <Content Include="Images\stock_construction.jpg" />
+    <Content Include="Images\stock_fNb.jpg" />
+    <Content Include="Images\stock_logistics.jpg" />
+    <Content Include="Images\stock_oilnGas.jpg" />
+    <Content Include="Images\stock_techStartup.jpg" />
     <Content Include="Images\tranquil_1910x1000.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -245,14 +257,13 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Careers.cshtml" />
-    <Content Include="Views\FinancialServices\LoansWithAxcelCapital.cshtml" />
-    <Content Include="Views\FinancialServices\LoansAndFinancialConsultancy.cshtml" />
+    <Content Include="Views\FinancialServices\FinancialConsultancy.cshtml" />
     <Content Include="Views\FinancialServices\InvoiceFinancing.cshtml" />
     <Content Include="Views\FinancialServices\BusinessFinancing.cshtml" />
-    <Content Include="Views\FinancialServices\PIC.cshtml" />
     <Content Include="Views\FinancialServices\GovtAssistedSchemes.cshtml" />
     <Content Include="Views\FinancialServices\PersonalLoanSolutions.cshtml" />
-    <Content Include="Views\FinancialServices\CustomSolutions.cshtml" />
+    <Content Include="Views\FinancialServices\BespokeSolutions.cshtml" />
+    <Content Include="Views\FinancialServices\PropertyFinancing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

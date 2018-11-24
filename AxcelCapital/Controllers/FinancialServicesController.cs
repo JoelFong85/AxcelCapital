@@ -14,12 +14,7 @@ namespace AxcelCapital.Controllers
             return View();
         }
 
-        public ActionResult LoansWithAxcelCapital()
-        {
-            return View();
-        }
-
-        public ActionResult LoansAndFinancialConsultancy()
+        public ActionResult FinancialConsultancy()
         {
             return View();
         }
@@ -29,14 +24,7 @@ namespace AxcelCapital.Controllers
             return View();
         }
 
-
         public ActionResult BusinessFinancing()
-        {
-            return View();
-        }
-
-
-        public ActionResult PIC()
         {
             return View();
         }
@@ -46,12 +34,17 @@ namespace AxcelCapital.Controllers
             return View();
         }
 
+        public ActionResult PropertyFinancing()
+        {
+            return View();
+        }
+
         public ActionResult PersonalLoanSolutions()
         {
             return View();
         }
 
-        public ActionResult CustomSolutions()
+        public ActionResult BespokeSolutions()
         {
             return View();
         }

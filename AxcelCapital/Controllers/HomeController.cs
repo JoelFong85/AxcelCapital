@@ -25,16 +25,16 @@ namespace AxcelCapital.Controllers
                 return View("Index");
             }
 
-            //var response = Request["g-recaptcha-response"];
+            var response = Request["g-recaptcha-response"];
             //string secretKey = "6LfV1HkUAAAAAPUeSeHOzVvqQvbdPrl0J8f87qwE";
-            //var client = new WebClient();
+            var client = new WebClient();
 
-            string EncodedResponse = Request["g-recaptcha-response"];
-            bool isCaptchaValid = (Recaptcha.Validate(EncodedResponse) == "True" ? true : false);
+            string encodedResponse = Request["g-recaptcha-response"];
+            bool isCaptchaValid = (Recaptcha.Validate(encodedResponse) == "true" ? true : false);
             if (!isCaptchaValid)
             {
                 TempData["recaptcha"] = "Please verify that you are not a robot";
-                return View();
+                return View("Index");
             }
             else
             {
@@ -53,7 +53,7 @@ namespace AxcelCapital.Controllers
                 sendMail(subjectTitle, emailBody);
 
                 //send success msg to Action
-
+                TempData["successMsg"] = "Your query has been received. We will contact you soon.";
                 return RedirectToAction("Index", "Home");
             }
 
